@@ -11,6 +11,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class MainPage {
+    private static final By ORDER_BUTTON =
+            By.xpath(".//button[text()='Заказать']");
+
     private static final By ACCORDION_ITEMS =
             By.xpath(".//div[@class='accordion__item']");
 
@@ -31,6 +34,10 @@ public class MainPage {
 
     public void open() {
         driver.get(PAGE_URL);
+    }
+
+    public void clickOrderButton(int index) {
+        driver.findElements(ORDER_BUTTON).get(index).click();
     }
 
     public void clickConfirmCookieButton() {

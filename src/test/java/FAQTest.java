@@ -25,7 +25,7 @@ public class FAQTest {
     }
 
     @Parameters
-    public static Object[][] testData() {
+    public static Object[][] getData() {
         return new Object[][]{
                 {0, "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},
                 {1, "Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим."},
